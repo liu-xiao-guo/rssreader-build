@@ -23,7 +23,10 @@ parts:
   qt-app:    
     source: .
     plugin: qmake
-    qt-version: qt5 
+    qt-version: qt5
+    build-packages:
+      - qt5-default 
+      - qtbase5-dev 
     prime:  
       - -usr/share/doc  
       - -usr/include
